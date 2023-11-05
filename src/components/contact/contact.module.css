@@ -1,0 +1,185 @@
+.Icon {
+    position: absolute;
+    width: 852px;
+    height: 451px;
+    object-fit: cover;
+}
+
+.getInTouchContainer,
+.simplyFillIn,
+.whatWeDoContainer,
+.withInnovationContainer {
+    position: absolute;
+    top: 281px;
+    left: 150px;
+    font-size: var(--font-size-31xl);
+    font-weight: 600;
+}
+
+.getInTouchContainer,
+.simplyFillIn,
+.whatWeDoContainer {
+    top: 822px;
+}
+
+.getInTouchContainer,
+.simplyFillIn {
+    top: 2586px;
+}
+
+.simplyFillIn {
+    top: 2747px;
+    font-size: var(--font-size-6xl);
+}
+
+.letsBuildSomethingContainer {
+    position: absolute;
+    left: 150px;
+    font-weight: 500;
+}
+
+.letsBuildSomethingContainer {
+    top: 2670px;
+    line-height: 20px;
+    font-size: var(--font-size-6xl);
+}
+
+.innovation {
+    color: var(--color-red);
+}
+
+.whetherItsA {
+    margin-top: 1500px;
+    margin-left: 150px;
+}
+
+.send {
+    display: flex;
+    justify-content: start;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+
+.sendmsg {
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    left: 715px;
+    top: 2335px;
+    border: 2px solid #EA3232;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: #222222;
+    color: #fff;
+    font-size: 15px;
+}
+
+@media (max-width:991px) {
+    .Icon {
+        display: none;
+    }
+
+    .send {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .sendmsg {
+        box-sizing: border-box;
+        width: 150px;
+        height: 40px;
+        left: 715px;
+        top: 2335px;
+        border: 2px solid #EA3232;
+        border-radius: 15px;
+        justify-content: center;
+        background-color: #222222;
+        color: #fff;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .getInTouchContainer,
+    .simplyFillIn,
+    .whatWeDoContainer,
+    .withInnovationContainer {
+        position: absolute;
+        top: 230px;
+        left: 10px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .simplyFillIn,
+    .whatWeDoContainer {
+        top: 822px;
+    }
+
+    .getInTouchContainer,
+    .simplyFillIn {
+        top: 1700px;
+        left: 20px;
+    }
+
+    .simplyFillIn {
+        top: 1840px;
+        font-size: 20px;
+    }
+
+    .letsBuildSomethingContainer {
+        position: absolute;
+        left: 20px;
+        font-weight: 500;
+    }
+
+    .whetherItsA {
+        margin-top: 300px;
+        margin-left: 18px;
+    }
+
+    .letsBuildSomethingContainer {
+        top: 1760px;
+        font-size: 20px;
+    }
+
+    .innovation {
+        color: var(--color-red);
+    }
+
+    .box {
+        margin-top: 50px;
+        margin-left: 20px !important;
+    }
+
+    .parentbox {
+        margin-left: 0px !important;
+    }
+}
+
+.parentbox {
+    margin-left: 140px;
+}
+
+.box {
+    margin-top: 50px !important;
+    margin-left: 100px;
+}
+
+.box input {
+    min-width: 48vh;
+    color: #fff;
+}
+
+.box label {
+    color: #ffff;
+}
+
+.box label::before {
+    border-bottom: 1px solid #ffff
+}
+
+.box input::after {
+    border-bottom: 2px solid #ff0000 !important;
+}

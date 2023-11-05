@@ -1,0 +1,105 @@
+.btn svg {
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.fabars svg {
+  margin-left: 183px;
+  margin-top: 40px;
+  color: #FFFFFF !important;
+  font-size: 30px !important;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  order: -1;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.sidebarDivider {
+  background-color: white;
+  width: 500px;
+  margin-top: 20px;
+}
+
+.btnclose {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 40px !important;
+  font-size: 40px !important;
+  color: #FFFFFF !important;
+
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+}
+
+.logoTextSynaps {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+.logoTextSolutions {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.Divider {
+  color: #FFFFFF;
+}
+.dropdownIcon svg{
+  color: #FFFFFF;
+}
+.listItem {
+  padding: 10px;
+  font-size: 40px !important;
+}
+
+.listItem:hover {
+  color: #ff0000;
+}
+.headerli{
+  color: #FFFFFF;
+  font-size: 40px !important;
+  text-align: center;
+}
+.headerli:hover{
+  color: #ff0000;
+}
+.listItemButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px !important;
+}
+
+.listItemIcon {
+  min-width: 32px;
+}
+
+.span1 svg {
+  margin-top: 35px;
+}

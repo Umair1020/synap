@@ -1,0 +1,92 @@
+.select {
+  display: none;
+}
+
+.active {
+  background-color: red;
+  /* Change the background color for the active button */
+}
+
+.webDesign {
+  cursor: pointer;
+  background-color: red;
+  /* Set the initial background color for the default button */
+}
+.arrowbtn{
+  margin-top: 820px;
+  margin-left: -220px;
+}
+@media(max-width: 991px) {
+  .select {
+    height: 57px;
+    left: 475px;
+    top: 1509px;
+    color: #fff;
+    background: linear-gradient(180deg, #ED3B3B 0%, #222222 184.21%) !important;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .viewall {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+  .view {
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    left: 715px;
+    top: 2335px;
+    border: 2px solid #EA3232;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: #222222;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .card2 {
+    margin-top: 50px;
+  }
+
+  .cardimg {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .option {
+    height: 57px;
+    background-color: #222222;
+    color: #fff;
+    border: 2px solid #EA3232;
+    border-radius: 15px;
+
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}

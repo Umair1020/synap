@@ -1,0 +1,351 @@
+.rectangleGroup {
+  position: absolute;
+  top: 1237px;
+  left: 150px;
+  width: 170px;
+  height: 57px;
+  font-family: var(--font-raleway);
+}
+@keyframes slowShakeX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.arrowAnimation {
+  /* height: 56.14%;
+  width: 31.18%; */
+  margin-left: 120px;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: -25px;
+  max-height: 100%;
+  animation: slowShakeX 3s infinite; /* You can adjust the animation duration (2s) to control the speed */
+}
+/*  */
+.rectangleDiv {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-mini);
+  border: 2px solid var(--color-crimson);
+  box-sizing: border-box;
+  width: 138px;
+  height: 57px;
+}
+
+.learnMore {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.innovation {
+  color: var(--color-red);
+}
+
+
+.vectorIcon {
+  height: 56.14%;
+  width: 50.18%;
+  margin-top: -28px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  margin-left: 122px;
+  animation-duration: 1s;
+}
+
+.team {
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+ 
+}
+
+.playIcon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movie-card:hover .buttonIconMain {
+  display: block;
+  /* Show the play icon when the card is hovered */
+}
+
+.buttonIconMain:hover,
+.movie-card:hover .playIcon {
+  /* Styles for the play icon when the card or button is hovered */
+  display: block;
+  /* Add any additional styles you want for the play icon */
+}
+
+@media (max-width:991px) {
+  .slickslide {
+    display: block;
+    margin-top: 19px;
+    /* margin-left: 20px !important; */
+    height: 250px !important;
+    margin: 0;
+  }
+
+  .team {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .modelh2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 280px !important;
+    position: absolute;
+
+  }
+
+  .modelpara {
+    color: #fff;
+    text-align: start;
+    margin-left: 20px !important;
+    margin-top: 320px !important;
+    position: absolute;
+  }
+
+  .ceo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ff0000 !important;
+    text-align: center;
+    margin-top: 235px !important;
+    position: absolute;
+  }
+
+  .modalImg {
+    width: 100%;
+    opacity: 0.5 !important;
+    margin-top: -500px !important;
+  }
+
+  .modalCloseButton {
+    background: #ff0000;
+    color: #fff;
+   
+
+  }
+
+  .modalCloseButton svg {
+    margin-top: -5px;
+  }
+}
+.modalCloseButton {
+  background: #ff0000;
+  color: #fff;
+  /* position: absolute; */
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+ 
+}
+.modalCloseButton svg {
+  margin-top: -5px;
+}
+.modalImg {
+  width: 100%;
+  opacity: 1;
+  margin-top: 90px;
+}
+.showCloseIcon {
+  display: block !important;
+}
+
+/* Add this class to hide the X icon */
+.hideCloseIcon {
+  display: none !important;
+}
+.ceo {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.modal-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.modal .close-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.modelpara {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.modelh2 {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+
+}
+
+.slickslide {
+  display: block;
+  margin-left: 0px;
+  margin-top: 19px;
+  max-width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+/* .center {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.side {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+} */
+
+
+.showProfileButton {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.showProfileButton:hover {
+  background-color: #555;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  background: transparent;
+  border-radius: 8px;
+  overflow-x: hidden;
+}
+
+.modalClose {
+  position: absolute;
+  top: 25px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  
+  color: #000000;
+}
+
+.card {
+  position: relative;
+  margin-top: 40px;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
+
+.profileButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalContent {
+  background-color: #000;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.cursor2 svg {
+  /* Customize the size and color of the "x" icon */
+  font-size: 16px;
+  color: #fff ;
+}
+
+.cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  /* background-color: #c6c6c6; */
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 0.15s;
+}
+
+.content:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: 0.5;
+}

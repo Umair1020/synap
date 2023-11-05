@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78ae7b19.css",
+    "main.js": "/static/js/main.3b583445.js",
+    "static/media/abbas.png": "/static/media/abbas.9133ee2d6bf7dbd6a138.png",
+    "static/media/areeb.png": "/static/media/areeb.813529335cdc2b096320.png",
+    "static/media/Shariq.jpeg": "/static/media/Shariq.43c424b75d7a973deea6.jpeg",
+    "static/media/mansoor.png": "/static/media/mansoor.a8762e033a5342ccc90d.png",
+    "static/media/synaps-logo-2@2x.png": "/static/media/synaps-logo-2@2x.ef2fa96c39df4c2b53bd.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.78ae7b19.css.map": "/static/css/main.78ae7b19.css.map",
+    "main.3b583445.js.map": "/static/js/main.3b583445.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78ae7b19.css",
+    "static/js/main.3b583445.js"
+  ]
+}

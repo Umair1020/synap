@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.filters a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.portfolio{
+    background-color: #000;
+    height: 200vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.filters a:hover,
+.filters a:focus,
+.filters a:active {
+    text-decoration: none;
+}
+
+.filters a:hover:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    height: 1px;
+    background-color: #000;
+}
+
+.filters a.active {
+    color: #000;
+}
+
+.filters a.active:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    height: 1px;
+    background-color: #000;
+}
+
+.item {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.item .item-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.item .item-wrap::after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.item .item-wrap img {
+    transition: 0.3s transform ease;
+    transform: scale(1);
+}
+
+.item .item-wrap>.work-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+}
+
+.item .item-wrap>.work-info h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.item .item-wrap>.work-info span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.item .item-wrap:hover {
+    text-decoration: none;
+}
+
+.item .item-wrap:hover img {
+    transform: scale(1.05);
+}
+
+.item .item-wrap:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item .item-wrap:hover .work-info {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.portimg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 88vh;
+    background-size: cover;
+}
+
+.portfolioh1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+@media(max-width: 991px) {
+    .portimg {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 65vh !important;
+        background-size: cover;
+    }
+
+
+    .portfoliopara {
+        margin-top: 6em !important;
+        margin-left: 20px;
+    }
+
+    .portfolioh1 {
+        font-size: 55px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-left: 20px;
+
+    }
+
+    .logoimg {
+        max-width: 100%;
+    }
+
+    .slide-wraps {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 75vh !important;
+    }
+
+    .porth1 {
+        font-size: 27px !important;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .portmain {
+        margin-top: 20vh;
+        margin-left: 25px;
+        font-size: 30px !important;
+        font-weight: bold;
+    }
+
+    .box {
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+}
+
+.portmain {
+    font-size: 40px;
+    margin-top: 20vh;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.slide-wraps {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.porth1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20vh;
+    color: #fff;
+}
+
+/* portfolio logo */
+
+.logoimg {
+    max-width: 100%;
+    height: fit-content;
+}
+
+/* 
+#portfolio socialmedia */
+.socialimg {
+    max-width: 70%;
+    margin: auto;
+    display: block;
+}
+
+@media(max-width:991px) {
+    .socialimg {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+
+    }
+}
+
+/* }
+#portfolio web */
+#portfolio .portfolio-item {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 1.25rem;
+    color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+    font-size: 1.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+}
+
+.portfolio-modal .modal-content {
+    text-align: center;
+}
+
+@media(max-width:991px) {
+    .portfolio-modal .modal-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .mains {
+        margin-top: 25vh;
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    .webh2 {
+        font-size: 25px !important;
+        margin-left: 40px !important;
+        color: #fff !important;
+    }
+
+    .left {
+        font-size: 30px !important;
+        left: 20px !important;
+        top: 10px !important;
+    }
+
+    .close-modal {
+        font-size: 30px !important;
+        right: 0 !important;
+        top: 0 !important;
+    }
+
+    .back {
+        margin-left: 0px !important;
+    }
+}
+
+.back {
+    margin-left: 60px;
+}
+
+.mains {
+    margin-top: 25vh;
+}
+
+.arrow {
+   margin: 30px;
+}
+
+.card {
+    transition: all 0.3s;
+    background: #eee;
+    box-shadow: 0 8px 8px -4px rgb(0, 0, 0);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-modal .modal-content h2,
+.portfolio-modal .modal-content .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 2rem;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+}
+
+.webh2 {
+    font-size: 45px;
+    color: #fff;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 2rem;
+    margin-left: 40px;
+    min-width: 100%;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: -0.5rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 50px
+}
+
+.left {
+    position: absolute;
+    top: -0.5rem;
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 50px;
+
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+}
+
+.modelimg {
+    max-width: 100%;
+    max-height: fit-content;
+    margin: auto;
+}
